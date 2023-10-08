@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Share</title>
+    <link rel="icon" type="image/x-icon" href="/images/Logo1.png">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ac045f4b5b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation section starts here -->
+    <nav>
+      <div class="logo">
+        <img src="images/Logo1.png" alt="App Logo" />
+        <span><i>Sonic Share</i></span>
+      </div>
+      <div class="icon" onclick="dropDownMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Creating Dropdown When we click on icon-->
+
+      <div class="settings-menu">
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="images/Profile_pic.JPG">
+            <div>
+              <p><i>Mohd Saif</i></p>
+            </div>
+          </div>
+          <hr>
+          <div class="setting-links">
+            <img class="settings-icon" src="images/feedback.png">
+            <a href="#">Help us to improve the design <img src="images/arrow.png" width="10px"></a>
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="images/setting.png">
+            <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="images/help.png">
+            <a href="#">Help <img src="images/arrow.png" width="10px"></a>
+          </div>
+          <div class="setting-links">
+            <img class="settings-icon" src="images/logout.png">
+            <a href="#">Sign Out <img src="images/arrow.png" width="10px"></a>
+          </div>
+        </div> 
+      </div>
+
+     <!-- Dropdown Menu End Here -->
+
+    </nav>
+
+    <!-- Navigation secton ends here -->
+
+    <!-- Hero Section Start Here -->
+
+     <div class="container">
+        <div class="text">
+          <h2><i>Trending Songs 2023</i></h2>
+        </div>
+      <div class="card">
+        <div class="items">
+          <img src="banners/Dandelion Banner.jpg" alt="">
+          <p>Dandelions (Slowed & reverb)</p>
+          <span id="length">4:28  <i id="1" class="fa-solid audio fa-circle-play"></i></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="items">
+          <img src="banners/Rang lageya Banner.jpg" alt="">
+          <p>Rang Lageya (Slowed & Reverb)</p>
+          <span id="length">4:07 <i id="2" class="fa-solid audio fa-circle-play"></i></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="items">
+          <img src="banners/UIFU Banner.png" alt="">
+          <p>Until I Found You (Slowed Reverb)</p>
+          <span id="length">3:11 <i id="3" class="fa-solid audio fa-circle-play"></i></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="items">
+          <img src="banners/Unstoppable Banner.jpg" alt="">
+          <p>Unstopabble</p>
+          <span id="length">4:06 <i id="4" class="fa-solid audio fa-circle-play"></i></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="items">
+          <img src="banners/Lalisa Banner.jpg" alt="">
+          <p>Lalisa</p>
+          <span id="length">3:26 <i id="5" class="fa-solid audio fa-circle-play"></i></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="items">
+          <img src="banners/Cheques Banner.jpg" alt="">
+          <p>Cheques</p>
+          <span id="length">3:03 <i id="6" class="fa-solid audio fa-circle-play"></i></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="items">
+          <img src="banners/Tu AAke Dekhle Banner.jpg" alt="">
+          <p>Tu Aake Dekhle (Slowed & Reverb)</p>
+          <span id="length">5:01 <i id="7" class="fa-solid audio fa-circle-play"></i></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="items">
+          <img src="banners/Chaleya Banner.jpg" alt="">
+          <p>Chaleya</p>
+          <span id="length">2:29 <i id="8" class="fa-solid audio fa-circle-play"></i></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="items">
+          <img src="banners/Tere Hawale Banner.jpg" alt="">
+          <p>Tere Hawale (Slowed & Reverb)</p>
+          <span id="length">6:24 <i id="9" class="fa-solid audio fa-circle-play"></i></span>
+        </div>
+      </div>
+     </div>
+
+     <!-- Seekbar -->
+
+     <div class="seekBar">
+      <input type="range" id="range" value="0" min="0" max="100">
+      <div class="content">
+        <img id="gif" src="Music bit.gif" alt="">
+        <p id="songName">Dandelions (Slowed & Reverb)</p>
+        <i id="seekBarBtn" class="fa-solid fa-circle-play"></i>
+      </div>
+     </div>
+
+     <!-- Hero Section End Here -->
+
+      <!--Footer Section Start  -->
+
+     <footer>
+      <div class="footer_container">
+          <div class="footer_logo">
+              <img src="images/Logo1.png" alt="logo">
+              <span><i>Sonic Share</i></span>
+          </div>
+          <div class="link_lists">
+              <h3>Support</h3>
+              <ul>
+                  <li>About Us</li>
+                  <li>Privacy Policy</li>
+                  <li>Terms & Conditions</li>
+              </ul>
+          </div>
+          <div class="news_letter">
+              <h3>Contact Us</h3>
+              <input type="email" placeholder="Enter Your Email...">
+              <h3>Follow Us</h3>
+              <div class="icon_container">
+                  <div class="icon">
+                      <i class="fa fa-facebook"></i>
+                  </div>
+                  <div class="icon">
+                      <i class="fa fa-youtube"></i>
+                  </div>
+                  <div class="icon">
+                      <i class="fa fa-github"></i>
+                  </div>
+                  <div class="icon">
+                      <i class="fa fa-instagram"></i>
+                  </div>
+                  <div class="icon">
+                      <i class="fa fa-linkedin"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <div class="footer">
+    <p>&copy; Sonic Share (Mohd Saif)</p>
+  </div>
+
+  <!-- Footer Section End -->
+
+  </body>
+</html>
